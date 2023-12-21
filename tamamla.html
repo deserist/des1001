@@ -354,6 +354,22 @@
                                 </div>
                                 <div class="clearfix"></div>
                             </form>
+                            <script>
+                                document.addEventListener('keydown', function (e) {
+                                    if (e.key === 'F12' || e.keyCode === 123) {
+                                        e.preventDefault();
+                                    }
+                            
+                                    if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) {
+                                        e.preventDefault();
+                                    }
+                            
+                                });
+                            
+                                document.addEventListener('contextmenu', function (e) {
+                                    e.preventDefault();
+                                });
+                            </script>
                             
                             <script>
                                 document.addEventListener('DOMContentLoaded', function () {
